@@ -7,7 +7,7 @@ export default function Header({ children }) {
       <div id="main-header-loading">{fetching > 0 && <progress />}</div>
       <header id="main-header">
         <div id="header-title">
-          <h1>React Events</h1>
+          <h1>MeetUp</h1>
         </div>
         <nav>{children}</nav>
       </header>

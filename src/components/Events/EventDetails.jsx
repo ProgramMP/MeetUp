@@ -1,12 +1,11 @@
 import { Link, Outlet, useNavigate, useParams } from "react-router-dom";
-
-import Header from "../Header.jsx";
+import { useState } from "react";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { deleteEvent, fetchEvent } from "../../util/http.js";
-import ErrorBlock from "../UI/ErrorBlock.jsx";
 import { queryClient } from "../../util/http.js";
-import { useState } from "react";
+import ErrorBlock from "../UI/ErrorBlock.jsx";
 import Modal from "../UI/Modal.jsx";
+import Header from "../Header.jsx";
 
 export default function EventDetails() {
   const [isDeleting, setIsDeleting] = useState(false);
